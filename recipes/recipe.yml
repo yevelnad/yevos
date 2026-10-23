@@ -30,6 +30,8 @@ modules:
         - fish
         - micro
         - starship
+        - ddccontrol
+        - ddccontrol-gtk
   - type: dnf
     repos:
       nonfree: rpmfusion
