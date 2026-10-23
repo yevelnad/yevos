@@ -14,17 +14,20 @@ image-version: 44 # You can pin to a specific version of Fedora as well
 # you can include multiple instances of the same module
 modules:
   - from-file: base/common.yml
-  - type: files
-    files:
-      - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-
   - type: dnf
     repos:
       copr:
         - atim/starship
+        - lionheartp/Hyprland
     install:
       packages:
+        - noctalia
+        - hyprland
+        - hyprland-guiutils
+        - fastfetch
+        - nvim
+        - git
+        - fish
         - micro
         - starship
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
