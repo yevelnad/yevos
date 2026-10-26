@@ -1,0 +1,70 @@
+modules:
+  - type: dnf
+    repos:
+    cleanup: true
+    copr:
+      - ublue-os/packages
+      - ublue-os/staging
+    install:
+      skip-unavailable: true
+      packages:
+        - bootc
+        - ublue-os-udev-rules
+        - fedora-repos-archive
+        - zstd
+        - sbsign
+        - alsa-firmware
+        - apr
+        - apr-util
+        - distrobox
+        - ffmpegthumbnailer
+        - flatpak-spawn
+        - fuse
+        - fzf
+        - grub2-tools-extra
+        - google-noto-sans-balinese-fonts
+        - google-noto-sans-cjk-fonts
+        - google-noto-sans-javanese-fonts
+        - google-noto-sans-sundanese-fonts
+        - htop
+        - just
+        - libcamera
+        - libcamera-tools
+        - libcamera-gstreamer
+        - libcamera-ipa
+        - libimobiledevice-utils
+        - libratbag-ratbagd
+        - lshw
+        - net-tools
+        - nvme-cli
+        - nvtop
+        - openrgb-udev-rules
+        - openssl
+        - oversteer-udev
+        - pam-u2f
+        - pam_yubico
+        - pamu2fcfg
+        - pipewire-plugin-libcamera
+        - powerstat
+        - smartmontools
+        - solaar-udev
+        - squashfs-tools
+        - symlinks
+        - tcpdump
+        - tmux
+        - traceroute
+        - usbmuxd
+        - vim
+        - wireguard-tools
+        - wl-clipboard
+        - xhost
+        - xorg-x11-xauth
+        - yubikey-manager
+        - openssh-askpass
+        - gvfs-fuse
+        - gvfs-smb
+        - gvfs-nfs
+        - gvfs-mtp
+      exclude:
+        - google-noto-sans-cjk-vf-fonts
+        - default-fonts-cjk-sans

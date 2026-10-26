@@ -11,6 +11,13 @@ modules:
     files:
       - source: system
         destination: /
-  - from-file: base/flatpak.yml
+  #- from-file: base/flatpak.yml
+  - from-file: base/hyprland.yml
+  - from-file: base/rpmfusion.yml
+  - from-file: base/applications.yml
+  - from-file: base/silverblue.yml
+  - type: kargs
+    kargs:
+      - rootflags=compress:zstd
   - type: initramfs
   - type: signing
