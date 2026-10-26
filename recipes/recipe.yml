@@ -12,4 +12,5 @@ modules:
       - source: system
         destination: /
   - from-file: base/flatpak.yml
+  - type: initramfs
   - type: signing
