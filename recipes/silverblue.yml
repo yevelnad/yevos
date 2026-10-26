@@ -3,7 +3,7 @@
 # image will be published to ghcr.io/<user>/<name>
 name: yevos-silverblue
 description: This is my personal OS image.
-base-image: quay.io/fedora/fedora-silverblue
+base-image: ghcr.io/blue-build/base-images/fedora-silverblue
 image-version: latest
 
 modules:
@@ -13,9 +13,8 @@ modules:
         destination: /
   #- from-file: base/flatpak.yml
   #- from-file: base/hyprland.yml
-  - from-file: base/rpmfusion.yml
-  - from-file: base/applications.yml
-  - from-file: base/silverblue.yml
-  - from-file: base/ublue.yml
+  #- from-file: base/rpmfusion.yml
+  #- from-file: base/silverblue.yml
+  #- from-file: base/ublue.yml
   - type: initramfs
   - type: signing
