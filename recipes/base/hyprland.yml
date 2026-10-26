@@ -1,9 +1,9 @@
 modules:
-  type: dnf
-  repos:
-    copr:
-      - lionheartp/Hyprland
-  install:
-    packages:
-      - hyprland
-      - hyprland-guiutils
+  - type: dnf
+    repos:
+      copr:
+        - lionheartp/Hyprland
+      install:
+        packages:
+          - hyprland
+          - hyprland-guiutils
