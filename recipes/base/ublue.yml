@@ -1,10 +1,10 @@
 modules:
   - type: dnf
     repos:
-    cleanup: true
-    copr:
-      - ublue-os/packages
-      - ublue-os/staging
+      cleanup: true
+      copr:
+        - ublue-os/packages
+        - ublue-os/staging
     install:
       skip-unavailable: true
       packages:
