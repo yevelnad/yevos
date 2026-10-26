@@ -12,9 +12,10 @@ modules:
       - source: system
         destination: /
   #- from-file: base/flatpak.yml
-  - from-file: base/hyprland.yml
+  #- from-file: base/hyprland.yml
   - from-file: base/rpmfusion.yml
   - from-file: base/applications.yml
   - from-file: base/silverblue.yml
- # - type: initramfs
+  - from-file: base/ublue.yml
+  - type: initramfs
   - type: signing

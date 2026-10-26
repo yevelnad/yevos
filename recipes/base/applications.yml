@@ -7,7 +7,6 @@ modules:
         - fish
         - nvim
         - distrobox
-        - ffmpegthumbnailer
     remove:
       auto-remove: false
       packages:
