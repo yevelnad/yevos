@@ -16,5 +16,5 @@ modules:
   - from-file: base/rpmfusion.yml
   - from-file: base/applications.yml
   - from-file: base/silverblue.yml
-  - type: initramfs
+ # - type: initramfs
   - type: signing
